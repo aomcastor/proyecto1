@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300&family=Titillium+Web:wght@200;300&display=swap');
 
-body{
-    display: flex;
+body {
     background: rgb(36,24,0);
     background: linear-gradient(0deg, rgba(36,24,0,1) 1%, rgba(68,121,9,1) 41%, rgba(191,255,0,1) 100%);
     background-repeat: no-repeat;
@@ -9,20 +8,20 @@ body{
     margin: 0%;
 }
 
-.contenido{
-    position: relative;
-    border: 10px;
-    padding: 20px;
-    margin: 10px;
-    font-family: 'Titillium Web', sans-serif;
-    font-weight: 300;
+header{
+    width: 100%;
+    height:5vh;
+    background-color: blue;
+    overflow:hidden;
 }
 
-#linea_vertical{
-    position: relative;
-    border-left: 2px solid green;
-    padding-left: 10px;
-    height: 100%;
+ul{
+    list-style: none;
+    margin: 0%;
+}
+
+li{
+    display: inline-block;
 }
 
 img{
@@ -32,24 +31,9 @@ img{
     height: 200px;
     background-size: cover;
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    filter: blur(10px);
 }
 
-img:hover{
-    filter: none;
-}
-
-.contenido>h3{
-    text-align: center;
-    font-size: 25px;
-}
-
-h1{
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 700;
-    font-size: 50px;
-}
-
-#descrp{
-    font-size: 20px;
+footer {
+    width: 100%;
+    background-color: blue;
 }
