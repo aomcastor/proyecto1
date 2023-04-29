@@ -1,39 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300&family=Titillium+Web:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: Lato;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
 
 body {
-    background: rgb(36,24,0);
-    background: linear-gradient(0deg, rgba(36,24,0,1) 1%, rgba(68,121,9,1) 41%, rgba(191,255,0,1) 100%);
-    background-repeat: no-repeat;
+    background: #fbfbfb;
     height: 100vh;
     margin: 0%;
 }
 
-header{
+header {
+    position: absolute;
     width: 100%;
-    height:5vh;
-    background-color: blue;
-    overflow:hidden;
+    height: 90px;
+    padding-bottom: 20px;
+    z-index: 1;
 }
 
-ul{
-    list-style: none;
-    margin: 0%;
-}
-
-li{
+header>p{
     display: inline-block;
 }
 
-img{
+#profilepic{
     border-radius: 100%;
+    width: 400px;
+}
 
-    width: 200px;
-    height: 200px;
-    background-size: cover;
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+section {
+    min-height: 100vh;
+}
+
+#contacto {
+    background-color: rgba(175, 89, 158, 0.3);
+    color: #0f0f0f;
 }
 
 footer {
     width: 100%;
-    background-color: blue;
+}
+
+button, footer {
+    background: #af599e;
+    color: #fbfbfb;
+}
+
+p{
+    padding: 20px 20px;
+}
+
+h1 {
+    font-size: 38px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+a {
+    color: #fbfbfb;
+    text-decoration: none;
+}
+
+button {
+    font-size: 20px;
+    border: none;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 12px 28px;
+}
+
+#logos > img {
+    width: 75px;
+    padding: 25px;
 }
