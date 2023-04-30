@@ -14,7 +14,6 @@
 
 main {
     max-width: 1200px;
-    margin: auto;
 }
 
 body,header {
@@ -24,13 +23,12 @@ body,header {
 header {
     position: fixed;
     box-shadow: -5px 0px 10px 5px #af599e;
-    display: flex;
+    justify-content: space-evenly;
 }
 
 header, footer {
     height: 90px;
     width:100%;
-    justify-content: space-evenly;
     display: flex;
 }
 
@@ -59,7 +57,7 @@ section {
     align-items: center;
 }
 
-#profilepic{
+#foto_perfil{
     border-radius: 100%;
     width: 400px;
 }
