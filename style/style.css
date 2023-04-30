@@ -9,6 +9,7 @@
     font-size: 18px;
     line-height: 1.2;
     text-align: center;
+    -webkit-tap-highlight-color: transparent;
 }
 
 main {
@@ -22,7 +23,6 @@ body,header {
 
 header {
     position: fixed;
-    padding-bottom: 20px;
     box-shadow: -5px 0px 10px 5px #af599e;
     display: flex;
 }
@@ -30,16 +30,25 @@ header {
 header, footer {
     height: 90px;
     width:100%;
+    justify-content: space-evenly;
+    display: flex;
 }
 
-.nav_links a {
-    border-radius: 4px;
-    padding: 12px;
+.nav_link{
+    display: inline-block;
+    height: 100%;
+    flex-grow: 1;
+    white-space: normal;
+    min-width: 33%;
+    word-wrap: break-word;
+    line-height: 80px;
+
 }
 
 #logo {
     font-weight: bold;
     font-size: 20px;
+    background: rgba(175, 89, 158, 0.3);
 }
 
 section {
@@ -64,10 +73,7 @@ section {
     border-radius: 25px;
 }
 
-footer {
-}
-
-button, footer {
+button, footer, .nav_link:active, .nav_link:hover{
     background: #af599e;
     color: #fbfbfb;
 }
@@ -101,3 +107,11 @@ button {
     width: 100px;
     padding: 25px;
 }
+
+footer a{
+    margin:auto;
+}
+
+footer:active {
+    background: rgba(175, 89, 158, 0.3);
+} 
